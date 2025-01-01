@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreynuth Huon - Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        :root {
+            --primary: #4A90E2;
+            --secondary: #F5F7FA;
+            --text: #2D3436;
+            --light-text: #636E72;
+            --border: #DFE6E9;
+        }
+
+        body {
+            background: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .resume-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        .sidebar {
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .skills-section h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-item {
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .main-content {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-period {
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .resume-container {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="/api/placeholder/150/150" alt="Sreynuth Huon" class="profile-pic">
+                <h2>Sreynuth Huon</h2>
+                <p>Full Stack Developer & Network Engineering Student</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>nuthishere11@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+855 70 540 222</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Phnom Penh, Cambodia</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>@YourNuthishere</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>sreynuth-huon-285749333</span>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3>Technical Skills</h3>
+                <div class="skill-item">• JavaScript</div>
+                <div class="skill-item">• Python</div>
+                <div class="skill-item">• C</div>
+                <div class="skill-item">• HTML/CSS</div>
+                <div class="skill-item">• EJS</div>
+            </div>
+
+            <div class="skills-section">
+                <h3>Languages</h3>
+                <div class="language-item">
+                    <span>English</span>
+                    <span>Fluent</span>
+                </div>
+                <div class="language-item">
+                    <span>Cambodian</span>
+                    <span>Native</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title">About Me</h2>
+                <p>I'm a passionate learner and active contributor with experience in multiple collaborative projects. I specialize in full-stack development and telecommunications engineering, combining technical expertise with strong problem-solving abilities.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-item">
+                    <h3 class="experience-title">Full Stack Developer</h3>
+                    <div class="experience-period">2023 - Present</div>
+                    <p>Developed and maintained full-stack applications using Express, EJS, and MySQL. Implemented real-time features and optimized application performance.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Projects</h2>
+                <div class="experience-item">
+                    <h3 class="experience-title">StaySafe</h3>
+                    <div class="experience-period">Security Application</div>
+                    <p>Designed and implemented a secure authentication system with encrypted data storage using Python and Tkinter. Featured robust security measures and user-friendly interface.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Dynamic Web Application</h3>
+                    <div class="experience-period">Web Development</div>
+                    <p>Built a full-stack web application featuring real-time updates, user authentication, and database integration using Express, EJS, and MySQL.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="experience-item">
+                    <h3 class="experience-title">Telecommunications & Network Engineering</h3>
+                    <div class="experience-period">Current</div>
+                    <p>Studying advanced networking concepts, telecommunications systems, and engineering principles.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
